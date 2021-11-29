@@ -1,0 +1,159 @@
+body {
+    background-color: #f3f5f7;
+}
+
+.page {
+    width: 1200px;
+    margin: auto;
+}
+
+.page div,
+.page span {
+    display: flex;
+}
+
+.w200 {
+    margin-left: 60px;
+}
+
+.w200 a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 2px transparent;
+}
+
+.w200 a:hover {
+    border-bottom: solid 2px blue;
+}
+
+.search-button {
+    height: 44x;
+}
+
+.search-input {
+    font-size: 14px;
+    color: #bfbfbf;
+    height: 14px;
+    padding: 0 0;
+    border: solid 1px blue;
+    border-right: 0;
+    padding: 15px;
+}
+
+.grandfather {
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+    margin-left: 2z00px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background-color: green;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.three {
+    width: 0;
+    height: 0;
+    border-top: solid 50px transparent;
+    border-bottom: solid 50px blue;
+    border-left: solid 50px blue;
+    border-right: solid 50px transparent;
+}
+
+.change {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    background-color: skyblue;
+    height: 100px;
+    transition: all 6s ease-out
+}
+
+.change:hover {
+    left: 500px;
+    top: 500px;
+    transform: scaleX(6) scaleY(6) rotate(1800deg);
+    border-radius: 50px;
+    background-color: red;
+}
+
+.logoh1 {
+    width: 200px;
+}
+
+.logoimg {
+    width: 100%;
+}
+
+.logo-a {
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.transformdiv {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: translate(100px, 100px);
+}
+
+.animdiv {
+    width: 200px;
+    height: 200px;
+    animation: myanim 3s infinite steps(1000);
+    animation-name: myanim;
+    background-color: blue;
+}
+
+@keyframes myanim {
+    0% {
+        transform: translate(0px) scale(0.5);
+        border-radius: 100px;
+    }
+
+    20% {
+        transform: translate(846px, 156px) scale(1.5) rotate(1800deg);
+        background-color: yellow;
+        border-radius: 30px;
+    }
+
+    50% {
+        transform: translate(1000px, 500px) scale(2) rotate(1800deg);
+        background-color: red;
+        border-radius: 30px;
+    }
+
+    75% {
+        transform: translate(368px, 150px) scale(2.2);
+        background-color: purple;
+        border-radius: 60px;
+    }
+
+    100% {
+        transform: translate(0px) scale(0.5);
+        background-color: turquoise;
+        border-radius: 100px;
+    }
+}
