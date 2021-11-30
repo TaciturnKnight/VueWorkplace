@@ -2,3 +2,4 @@ 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
 cnpm i -D webpack webpack-cli typescript ts-loader webpack-dev-server html-webpack-plugin
 cnpm i -D @babel/core @babel/preset-env babel-loader core-js
 git config --global http.sslVerify "false"
+cnpm i -D @babel/core @babel/preset-env babel-loader core-js

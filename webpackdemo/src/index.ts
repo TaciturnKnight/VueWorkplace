@@ -171,4 +171,75 @@ class Handler {
     constructor(info: string) {
         this.info = info;
     }
+
+    onClickBad(e: Event) {
+        this.info = "onClickBad"
+    }
+}
+
+let h = new Handler("unknow")
+
+class MyUIElement implements UIElement {
+    addClickListener(onclick: (e: Event) => void): void {
+    }
+
+}
+
+//泛型
+function create<T>(c: { new(): T }): T {
+    return new c()
+}
+
+const fishsh = create(Fish)
+fishsh.move(1)
+
+//类型推断
+window.onmousedown = function (mouseEvent) {
+    console.log(mouseEvent.button);
+}
+
+//类型兼容性
+interface Tree {
+    name: string
+}
+
+class Flower {
+    name: string
+
+    constructor(name: string) {
+        this.name = name;
+    }
+
+    used() {
+        console.log(this.name + "被使用了")
+    }
+}
+
+let tree: Tree
+tree = new Flower("霸王花")
+let flower = tree as Flower
+flower.used()
+//联合类型
+type niubi = Person | Fish | Tree
+let a: niubi
+a = new Flower("玫瑰花")
+if (a instanceof Me) {
+    if (a.speak)
+        a.speak("我有一家大飞机")
+} else if (a instanceof Fish) {
+    a.move(100)
+} else if (a instanceof Flower) {
+    a.used()
+}
+
+function isPerson(obj: niubi): obj is Person {
+    return (<Person>obj).speak !== undefined
+}
+
+function isFish(obj: niubi): obj is Fish {
+    return (<Fish>obj).move !== undefined
+}
+
+function isFlower(obj: niubi): obj is Flower {
+    return (<Flower>obj).used !== undefined
 }
