@@ -12,7 +12,10 @@ module.exports = {
         //指定打包后的目录
         path: path.resolve(__dirname, 'dist'),
         //打包后文件的文件名
-        filename: "bundle.js"
+        filename: "bundle.js",
+        environment: {
+            arrowFunction: false
+        }
     },
     //指定webpack打包时要使用的模块
     module: {
