@@ -1,5 +1,11 @@
 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
+//webpack编译
 cnpm i -D webpack webpack-cli typescript ts-loader webpack-dev-server html-webpack-plugin
+//旧版js兼容依赖
 cnpm i -D @babel/core @babel/preset-env babel-loader core-js
 git config --global http.sslVerify "false"
 cnpm i -D @babel/core @babel/preset-env babel-loader core-js
+//css插件
+npm i -D less less-loader css-loader style-loader
+//旧版css兼容依赖
+npm i -D postcss postscc-loader postcss-preset-env 
