@@ -1,7 +1,7 @@
 //定义记分牌类
 class ScoreBoard {
     private _score = 0
-    private _level = 1
+    private _level = 8
     maxLevel: number
     levelScore: number
     scoreElement: HTMLElement

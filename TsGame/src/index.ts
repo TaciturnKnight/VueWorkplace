@@ -1,4 +1,7 @@
 import './style/index.less'
 import GameControl from "./modules/GameControl";
 
-new GameControl()
+const gamecontrol=new GameControl()
+setInterval(()=>{
+    console.log(gamecontrol.direction)
+},1000)
