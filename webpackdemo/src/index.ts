@@ -243,3 +243,29 @@ function isFish(obj: niubi): obj is Fish {
 function isFlower(obj: niubi): obj is Flower {
     return (<Flower>obj).used !== undefined
 }
+
+//symbols
+let sym = Symbol(1)
+//迭代
+let sarray=["oijawef","123123","aweijt","osaisjwer","zojiuwe","aowiuhet"]
+let smap=new Map<string,string>()
+smap.set("123","847u5")
+smap.set("321","1453")
+smap.set("523","352")
+smap.set("4984","123")
+console.log("数组的for in")
+for(let key in sarray){
+    console.log(key) 
+}
+console.log("数组的for of")
+for(let value of sarray){
+    console.log(value)
+}
+console.log("map的for in")
+for (let key in smap){
+    console.log(key)
+}
+console.log("map的for of")
+for (let value of smap){
+    console.log(value)
+}

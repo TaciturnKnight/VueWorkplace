@@ -6,7 +6,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: "production",
     //指定入口文件
-    entry: './src/namespace.ts',
+    entry: './src/index.ts',
     //指定打包输出目录
     output: {
         //指定打包后的目录
